@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 510px;
+}
+
+.textBox{
+    width: 600px;
+
+}
+
+.imgBox {
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+  
+}
+
+.imgBoxSmall {
+    display: flex;
+    justify-content: center;
+    
+}
+.copo-pequeno {
+    cursor: pointer;
+    width: 60px;
+    transition: 0.5s;
+}
+
+.copo-pequeno:hover {
+    transform: translateY(-30px);
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: 500;
+
+}
+
+span {
+     color: #017143;
+     font-weight: 900;
+
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+button {
+      
+     background: #017143;
+     color: #fff;
+     padding: 10px;
+     border-radius: 15px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.3);
+}
+
+.copao {
+    width: 300px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.circulo{
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px); /*para cortar o circulo é necessarios indicar os parametros (os pixels a serem mantidos)*/
+
+}

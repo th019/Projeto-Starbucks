@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div conteudo>
+        <div class="circulo"></div>
+        <img src="./img/logo.png" alt="Logo">
+        <div class="Container">
+            <div class="textBox">
+                <h1>It's not just Coffee It's <span>Starbucks</span></h1>
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit. quis eum corrupti odit aperiam illum odio
+                    voluptatum ea nisi vero. neque tempore sequi nisi , enim vel cumque delectus odit.</p>
+                <button class="botao">Deixe seu Like!</button>
+            </div>
+            <div class="imgBox">
+                <img class="copao" src="./img/img1.png" alt="copo grande">
+            </div>
+
+        </div>
+        <div class="imgBoxSmall">
+            <img src="./img/img-pequena1.png" alt="copo verde" class="copo-pequeno verde">
+            <img src="./img/img-pequena2.png" alt="copo magenta" class="copo-pequeno magenta">
+            <img src="./img/img-pequena3.png" alt="copo rosa" class="copo-pequeno rosa">
+        </div>
+    </div>
+
+</body>
+<script>
+
+    alert("Bem vindo ao Starbucks ! resoluçao desenvolvida de 1920x1080");
+
+    let circulo = document.querySelector(".circulo")
+    let copao = document.querySelector(".copao")
+    let verde = document.querySelector(".verde")
+    let magenta = document.querySelector(".magenta")
+    let rosa = document.querySelector(".rosa")
+    let botao = document.querySelector(".botao")
+
+    verde.addEventListener("click", () => {
+        copao.src = "./img/img1.png"/*aqui vamos navegando ate onde queremos modificar atravez dos pontos*/
+        circulo.style.background = "#017143"
+    })
+
+    magenta.addEventListener("click", () => {
+        copao.src = "./img/img2.png"
+        circulo.style.background = "#eb7495"
+    })
+
+    rosa.addEventListener("click", () => {
+        copao.src = "./img/img3.png"
+        circulo.style.background = "#d752b1"
+    })
+
+    botao.addEventListener("click", () => {
+        alert("Obrigado por CURTIR!");
+    })
+
+
+</script>
+
+</html>
