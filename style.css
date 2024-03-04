@@ -12,12 +12,14 @@ body {
 
 }
 
+
+
 .Container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 510px;
+    
 }
 
 .textBox{
@@ -35,6 +37,7 @@ body {
 .imgBoxSmall {
     display: flex;
     justify-content: center;
+    margin-top: 22%;
     
 }
 .copo-pequeno {
